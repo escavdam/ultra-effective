@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="dom-document-object-model">DOM (Document Object Model)</h1>
+<p>El DOM es un modelo que indica como se debe estructurar las pásginas o las aplicaciones web. Estas se construyen y se interpretan de forma secuencial, por lo que puede pasar esque cuando se intente acceder a un elemento y aún no este disponible.</p>
+<p>El objeto inicial del que parten todos los objetos, en el DOM, es el objeto <strong>document</strong> y de este objeto se van construyendo y definiendo los demás.<br>
+El objeto <strong>document</strong> de JavaScript, representa a la etiqueta <strong>html</strong>.</p>
+<h2 id="los-nodos-y-sus-tipos">1. Los nodos y sus tipos:</h2>
+<p>Aunque existe 12 tipos de nodos en JS, solo se suelen utilizar 5 porque son los qu más se necesitan para realizar las acciones u operaciones cuando se trabaja con páginas o aplicaciones web.</p>
+
+<table>
+<thead>
+<tr>
+<th>Tipo nodo</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Document</td>
+<td>Nodo raíz del que dependen todos los demás.</td>
+</tr>
+<tr>
+<td>Element</td>
+<td>Son los elementos representados por las etiquetas HTML.</td>
+</tr>
+<tr>
+<td>Attr</td>
+<td>Son las propiedades de las etiquetas asociadas a cada Element.</td>
+</tr>
+<tr>
+<td>Text</td>
+<td>Son los valores o textos contenidos dentro de las etiquetas del HTML</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>Son los que se ha generadoa partir de etiquetas doctype y que se transforman en nodos o han sido creados como comentarios</td>
+</tr>
+</tbody>
+</table><h2 id="selección-de-elementos">2. Selección de elementos</h2>
+<ul>
+<li>Para acceder a los elementos del DOM debemos recurrir a los métodos y propiedades proporcionadas por el DOM. Por ejemplo:</li>
+</ul>
+<pre class=" language-js"><code class="prism  language-js">
+document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">"table"</span><span class="token punctuation">)</span>
+
+</code></pre>
+<ul>
+<li>Una vez seleccionados los nodos se puede modificar su contenido o estilo. De este modo:</li>
+</ul>
+<pre class=" language-js"><code class="prism  language-js">
+elemento<span class="token punctuation">.</span>innerHTML  <span class="token operator">=</span>  <span class="token string">"Hola mundo"</span>
+
+</code></pre>
+<h2 id="eventos">3. Eventos</h2>
+<p>El DOM permite vinculare eventos a elementos del documento. Los eventos representan acciones o interacciones, como hacer click en un botón, etc. JS puede escuchar estos eventos y ejecutar un código en respuesta. Este es un ejemplo:</p>
+<pre class=" language-js"><code class="prism  language-js">
+elemento<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">"click"</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"click!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre>
+<h2 id="creación-y-eliminación-de-nodos">4. Creación y Eliminación de Nodos</h2>
+<ul>
+<li>JS permite crear nuevos nodos y agregarlos al document.</li>
+</ul>
+<pre class=" language-js"><code class="prism  language-js">
+<span class="token keyword">let</span>  elemento  <span class="token operator">=</span>  document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">"div"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre>
+<ul>
+<li>También se permiten eliminarlos.</li>
+</ul>
+<pre class=" language-js"><code class="prism  language-js">
+elemento<span class="token punctuation">.</span>parentNode<span class="token punctuation">.</span><span class="token function">removeChild</span><span class="token punctuation">(</span>elemento<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre>
+</div>
+</body>
+
+</html>
