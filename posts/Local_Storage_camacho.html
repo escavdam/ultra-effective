@@ -45,39 +45,39 @@
   <!-- blog con 5 ultimas entradas -->
   <main>
     <article>
-        <h2 id="local-storage-en-javascript">Local Storage en JavaScript:</h2>
-<p>El <code>localStorage</code> es una interfaz de almacenamiento en el navegador que permite a las aplicaciones web almacenar datos de forma persistente en el dispositivo del usuario. La información almacenada en el <code>localStorage</code> persiste incluso después de cerrar y volver a abrir el navegador, lo que lo convierte en una opción útil para almacenar pequeñas cantidades de datos.</p>
-<h3 id="cómo-utilizar-el-local-storage-con-ejemplos-de-código">Cómo Utilizar el Local Storage con Ejemplos de Código:</h3>
-<ol>
-<li>
-<p><strong>Guardar Datos en el Local Storage:</strong></p>
-<pre class=" language-javascript"><code class="prism  language-javascript">
-localStorage<span class="token punctuation">.</span><span class="token function">setItem</span><span class="token punctuation">(</span><span class="token string">'nombre'</span><span class="token punctuation">,</span> <span class="token string">'Ejemplo'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> usuario <span class="token operator">=</span> <span class="token punctuation">{</span> nombre<span class="token punctuation">:</span> <span class="token string">'John'</span><span class="token punctuation">,</span> edad<span class="token punctuation">:</span> <span class="token number">30</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
-localStorage<span class="token punctuation">.</span><span class="token function">setItem</span><span class="token punctuation">(</span><span class="token string">'usuario'</span><span class="token punctuation">,</span> JSON<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>usuario<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>
-<p>Estamos guardando una cadena y un objeto en el localStorage. En este caso como tenemos objeto utilzamos el JSON.stringify</p>
-</li>
-<li>
-<p><strong>Recuperar Datos del Local Storage:</strong></p>
-<pre class=" language-javascript"><code class="prism  language-javascript">
- <span class="token keyword">var</span> nombre <span class="token operator">=</span> localStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">'nombre'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
- <span class="token keyword">var</span> usuarioGuardado <span class="token operator">=</span> localStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">'usuario'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
- <span class="token keyword">var</span> usuarioObjeto <span class="token operator">=</span> JSON<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>usuarioGuardado<span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>
-<p>Aquí, estamos recuperando datos del localStorage. La cadena JSON se convierte de nuevo a un objeto usando JSON.parse para el objeto guardado.</p>
-</li>
-<li>
-<p><strong>Eliminar Datos del Local Storage:</strong></p>
-<pre class=" language-javascript"><code class="prism  language-javascript">
-localStorage<span class="token punctuation">.</span><span class="token function">removeItem</span><span class="token punctuation">(</span><span class="token string">'nombre'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-localStorage<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre>
-<p>Y puedes eliminar un elemento o limpiar todo el localStorage usando removeItem o clear respectivamente.</p>
-</li>
-</ol>
+      <h2 id="local-storage-en-javascript">Local Storage en JavaScript:</h2>
+      <p>El <code>localStorage</code> es una interfaz de almacenamiento en el navegador que permite a las aplicaciones web almacenar datos de forma persistente en el dispositivo del usuario. La información almacenada en el <code>localStorage</code> persiste incluso después de cerrar y volver a abrir el navegador, lo que lo convierte en una opción útil para almacenar pequeñas cantidades de datos.</p>
+      <h3 id="cómo-utilizar-el-local-storage-con-ejemplos-de-código">Cómo Utilizar el Local Storage con Ejemplos de Código:</h3>
+      <ol>
+      <li>
+      <p><strong>Guardar Datos en el Local Storage:</strong></p>
+      <pre class=" language-javascript"><code class="prism  language-javascript">
+      localStorage<span class="token punctuation">.</span><span class="token function">setItem</span><span class="token punctuation">(</span><span class="token string">'nombre'</span><span class="token punctuation">,</span> <span class="token string">'Ejemplo'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">var</span> usuario <span class="token operator">=</span> <span class="token punctuation">{</span> nombre<span class="token punctuation">:</span> <span class="token string">'John'</span><span class="token punctuation">,</span> edad<span class="token punctuation">:</span> <span class="token number">30</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+      localStorage<span class="token punctuation">.</span><span class="token function">setItem</span><span class="token punctuation">(</span><span class="token string">'usuario'</span><span class="token punctuation">,</span> JSON<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>usuario<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      </code></pre>
+      <p>Estamos guardando una cadena y un objeto en el localStorage. En este caso como tenemos objeto utilzamos el JSON.stringify</p>
+      </li>
+      <li>
+      <p><strong>Recuperar Datos del Local Storage:</strong></p>
+      <pre class=" language-javascript"><code class="prism  language-javascript">
+       <span class="token keyword">var</span> nombre <span class="token operator">=</span> localStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">'nombre'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+       <span class="token keyword">var</span> usuarioGuardado <span class="token operator">=</span> localStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">'usuario'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      
+       <span class="token keyword">var</span> usuarioObjeto <span class="token operator">=</span> JSON<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>usuarioGuardado<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      </code></pre>
+      <p>Aquí, estamos recuperando datos del localStorage. La cadena JSON se convierte de nuevo a un objeto usando JSON.parse para el objeto guardado.</p>
+      </li>
+      <li>
+      <p><strong>Eliminar Datos del Local Storage:</strong></p>
+      <pre class=" language-javascript"><code class="prism  language-javascript">
+      localStorage<span class="token punctuation">.</span><span class="token function">removeItem</span><span class="token punctuation">(</span><span class="token string">'nombre'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      
+      localStorage<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      </code></pre>
+      <p>Y puedes eliminar un elemento o limpiar todo el localStorage usando removeItem o clear respectivamente.</p>
+      </li>
+      </ol>
     </article>
   </main>
   <!-- footer -->
