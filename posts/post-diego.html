@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+
+<script>hljs.highlightAll();</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- navbar -->
+  <nav>
+    <div class="left">
+      <ul>
+        <li>
+          <a href="/index.html">Home</a>
+        </li>
+      </ul>
+    </div>
+    <div class="right">
+      <ul>
+        <li>
+          <a href="/blog.html">Blog</a>
+        </li>
+        <li>
+          <a href="/projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="/about.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- hero -->
+  <header>
+    <h1>Template</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+  </header>
+  <!-- blog con 5 ultimas entradas -->
+  <main>
+    <article>
+        <h1 id="pseudoclases">Pseudoclases</h1>
+<p><a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements">MDN Introduccion a pseudoclases y pseudoelementos</a></p>
+<p><a href="https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes">MDN Pseudoclases</a></p>
+<p>Las pseudoclases nos permiten seleccionar elementos en base a su estado, por ejemplo, si el ratón está encima de un elemento, si un elemento está seleccionado, etc.</p>
+<p>Las pseudoclases disponibles son:</p>
+<ul>
+<li><code>:active</code>: Selecciona un elemento cuando está activo, por ejemplo, cuando hacemos click en un enlace.</li>
+<li><code>:checked</code>: Selecciona un elemento cuando está marcado, por ejemplo, un checkbox.</li>
+<li><code>:disable</code>: Selecciona un elemento cuando está deshabilitado, por ejemplo, un botón deshabilitado.</li>
+<li><code>:empty</code>: Selecciona un elemento cuando está vacío, por ejemplo, un elemento <code>div</code> sin contenido.</li>
+<li><code>:enabled</code>: Selecciona un elemento cuando está habilitado, por ejemplo, un botón habilitado.</li>
+<li><code>:first-child</code>: Selecciona el primer elemento hijo de otro elemento.</li>
+<li><code>:last-child</code>: Selecciona el último elemento hijo de otro elemento.</li>
+<li><code>:first-of-type</code>: Selecciona el primer elemento de un tipo.</li>
+<li><code>:focus</code>: Selecciona un elemento cuando tiene el foco, por ejemplo, un <code>input</code> cuando hacemos click en él.</li>
+<li><code>:hover</code>: Selecciona un elemento cuando el ratón está encima de él.</li>
+<li><code>:in-range</code>: Selecciona un elemento cuando está dentro de un rango, por ejemplo, un <code>input</code> de tipo <code>number</code> cuando su valor está dentro del rango especificado.</li>
+</ul>
+<p>## </p>
+<p>Las pseudoclases son muy utiles para poder seleccionar elementos en base a su estado, por ejemplo, para cambiar el color de un enlace cuando el ratón está encima de él:</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">color</span>: red;
+}
+</code></pre>
+<p>Pero también podemos usarlas para seleccionar elementos que no tienen un estado concreto, por ejemplo, para seleccionar el primer elemento <code>p</code> de un elemento <code>div</code>:</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">div</span> <span class="hljs-selector-tag">p</span>:first-child {
+  <span class="hljs-attribute">color</span>: red;
+}
+</code></pre>
+<p>Otro ejemplo, aqui siempre seleccionamos el ultimo elemento, independientemente del tipo:</p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">div</span> <span class="hljs-selector-pseudo">:last-child</span> {
+  <span class="hljs-attribute">color</span>: red;
+}
+</code></pre>
+
+    </article>
+  </main>
+  <!-- footer -->
+
+  <footer>
+    <p>Aqui termina internet.</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
