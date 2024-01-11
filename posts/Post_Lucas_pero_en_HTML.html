@@ -1,86 +1,143 @@
-﻿ <div class="stackedit__html"><h1 id="css-grid-layout">CSS Grid Layout</h1>
-<p>CSS Grid Layout es una herramienta poderosa para crear diseños de página complejos y flexibles en CSS. Permite dividir la página en filas y columnas, proporcionando un control preciso sobre la disposición de los elementos.</p>
-<h2 id="concepto-básico">1. Concepto Básico</h2>
-<pre class=" language-css"><code class="prism  language-css"><span class="token selector"><span class="token class">.container</span> </span><span class="token punctuation">{</span>
-  <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span>
-  <span class="token property">grid-template-rows</span><span class="token punctuation">:</span> <span class="token number">100</span>px <span class="token number">200</span>px<span class="token punctuation">;</span> 
-  <span class="token comment">/* Dos filas de tamaños diferentes */</span>
-  <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> <span class="token number">1</span>fr <span class="token number">2</span>fr<span class="token punctuation">;</span>  <span class="token comment">/*Dos columnas, 
-  la segunda es el doble de ancha que la primera*/</span>
-  <span class="token property">gap</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>    <span class="token comment">/* Espacio de 10px entre filas y columnas */</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<h2 id="colocación-de-elementos">2. Colocación de Elementos</h2>
-<p>Puedes colocar elementos en la cuadrícula utilizando las propiedades grid-row y grid-column.</p>
-<pre class=" language-css"><code class="prism  language-css"><span class="token selector"><span class="token class">.item</span> </span><span class="token punctuation">{</span>
-  <span class="token property">grid-row</span><span class="token punctuation">:</span> <span class="token number">1</span> / <span class="token number">3</span><span class="token punctuation">;</span> <span class="token comment">/* Ocupa desde la fila 1 hasta la fila 3 (inclusive) */</span>
-  <span class="token property">grid-column</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">;</span>  <span class="token comment">/* Ocupa la columna 2 */</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<h2 id="atajos-con-grid-area">3. Atajos con grid-area</h2>
-<p>La propiedad grid-area es un atajo que combina grid-row, grid-column, grid-row-end, y grid-column-end.</p>
-<pre class=" language-css"><code class="prism  language-css"><span class="token selector"><span class="token class">.item</span> </span><span class="token punctuation">{</span>
-  <span class="token property">grid-area</span><span class="token punctuation">:</span> <span class="token number">1</span> / <span class="token number">2</span> / <span class="token number">3</span> / <span class="token number">4</span><span class="token punctuation">;</span> <span class="token comment">/* Equivalente a grid-row, grid-column, grid-row-end, grid-column-end */</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<h2 id="alineación">4. Alineación</h2>
-<p>Puedes alinear elementos dentro de las celdas utilizando propiedades como justify-items y align-items en el contenedor.</p>
-<pre class=" language-css"><code class="prism  language-css"><span class="token selector"><span class="token class">.container</span> </span><span class="token punctuation">{</span>
-  <span class="token property">justify-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span> <span class="token comment">/* Alinea los elementos en el centro horizontalmente */</span>
-  <span class="token property">align-items</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span> <span class="token comment">/* Alinea los elementos en el centro verticalmente */</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<h2 id="diseño-responsivo">5. Diseño Responsivo</h2>
-<p>CSS Grid Layout es altamente responsive. Utiliza la unidad fr para especificar tamaños relativos y las funciones minmax() y auto para un diseño flexible.</p>
-<pre class=" language-css"><code class="prism  language-css"><span class="token selector"><span class="token class">.container</span> </span><span class="token punctuation">{</span>
-  <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> <span class="token function">repeat</span><span class="token punctuation">(</span>auto-fill, <span class="token function">minmax</span><span class="token punctuation">(</span><span class="token number">100</span>px, <span class="token number">1</span>fr<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token comment">/* Crea columnas de al menos 100px de ancho y crece para llenar el espacio disponible */</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<h2 id="distribución-automática">6. Distribución Automática</h2>
-<p>CSS Grid ofrece propiedades como auto-fill y auto-fit que permiten una distribución automática de elementos en la cuadrícula.</p>
-<pre class=" language-css"><code class="prism  language-css"><span class="token selector"><span class="token class">.container</span> </span><span class="token punctuation">{</span>
-  <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> <span class="token function">repeat</span><span class="token punctuation">(</span>auto-fill, <span class="token function">minmax</span><span class="token punctuation">(</span><span class="token number">100</span>px, <span class="token number">1</span>fr<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token comment">/* Crea columnas de al menos 100px de ancho y crece para llenar el espacio disponible */</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<h2 id="áreas-de-la-cuadrícula">7. Áreas de la Cuadrícula</h2>
-<p>Puedes definir áreas en la cuadrícula y colocar elementos en esas áreas para simplificar la estructura del código.</p>
-<pre class=" language-css"><code class="prism  language-css"><span class="token selector"><span class="token class">.container</span> </span><span class="token punctuation">{</span>
-  <span class="token property">grid-template-areas</span><span class="token punctuation">:</span>
-    <span class="token string">"header header"</span>
-    <span class="token string">"sidebar main"</span>
-    <span class="token string">"footer footer"</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 
-<span class="token selector"><span class="token class">.item</span> </span><span class="token punctuation">{</span>
-  <span class="token property">grid-area</span><span class="token punctuation">:</span> header<span class="token punctuation">;</span> <span class="token comment">/* Coloca el elemento en el área "header" */</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<h2 id="alineación-avanzada">8. Alineación Avanzada</h2>
-<p>Propiedades como justify-content y align-content permiten la alineación de las filas y columnas en el contenedor de la cuadrícula.</p>
-<pre class=" language-css"><code class="prism  language-css"><span class="token selector"><span class="token class">.container</span> </span><span class="token punctuation">{</span>
-  <span class="token property">justify-content</span><span class="token punctuation">:</span> space-around<span class="token punctuation">;</span> <span class="token comment">/* Distribuye uniformemente las filas en el contenedor */</span>
-  <span class="token property">align-content</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>         <span class="token comment">/* Centra verticalmente las columnas en el contenedor */</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<h2 id="ordenación-de-elementos">9. Ordenación de Elementos</h2>
-<p>La propiedad order permite cambiar el orden visual de los elementos sin modificar el orden en el código HTML.</p>
-<pre class=" language-css"><code class="prism  language-css"><span class="token selector"><span class="token class">.item</span> </span><span class="token punctuation">{</span>
-  <span class="token property">order</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">/* Mueve el elemento al principio del orden visual */</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<h2 id="fracciones-y-unidades-de-auto">10. Fracciones y Unidades de Auto</h2>
-<p>Además de fr, las unidades como min-content, max-content y auto pueden ser útiles en ciertos contextos.</p>
-<pre class=" language-css"><code class="prism  language-css"><span class="token selector"><span class="token class">.container</span> </span><span class="token punctuation">{</span>
-  <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> <span class="token number">1</span>fr min-content auto<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<p>Aquí dejo algunos ejemplos de los resultados que se podrían alcanzar usando este util comando.</p>
-<p><img src="IMG/grid1.png" alt="Una forma de contener la información"><br>
-Una forma de contener la información.</p>
-<p><img src="IMG/Grid2.jpg" alt="Alt text"><br>
-Una ayuda visual de como se generan los bloques.</p>
-<p>Este <a href="https://youtu.be/dQw4w9WgXcQ">LINK</a> le llevará directo a la pagina web official de CSS para que consulte cualquier duda que tenga.</p>
-<p>:-D</p>
-</div>
+
+<script>hljs.highlightAll();</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- navbar -->
+  <nav>
+    <div class="left">
+      <ul>
+        <li>
+          <a href="/index.html">Home</a>
+        </li>
+      </ul>
+    </div>
+    <div class="right">
+      <ul>
+        <li>
+          <a href="/blog.html">Blog</a>
+        </li>
+        <li>
+          <a href="/projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="/about.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- hero -->
+  <header>
+    <h1>Template</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+  </header>
+  <!-- blog con 5 ultimas entradas -->
+  <main>
+    <article>
+      <h1 id="css-grid-layout">CSS Grid Layout</h1>
+      <p>CSS Grid Layout es una herramienta poderosa para crear diseños de página complejos y flexibles en CSS. Permite dividir la página en filas y columnas, proporcionando un control preciso sobre la disposición de los elementos.</p>
+      <h2 id="1-concepto-b-sico">1. Concepto Básico</h2>
+      <pre><code class="lang-css"><span class="hljs-selector-class">.container</span> {
+        <span class="hljs-attribute">display</span>: grid;
+        <span class="hljs-attribute">grid-template-rows</span>: <span class="hljs-number">100px</span> <span class="hljs-number">200px</span>; 
+        <span class="hljs-comment">/* Dos filas de tamaños diferentes */</span>
+        <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-number">1</span>fr <span class="hljs-number">2</span>fr;  <span class="hljs-comment">/*Dos columnas, 
+        la segunda es el doble de ancha que la primera*/</span>
+        <span class="hljs-attribute">gap</span>: <span class="hljs-number">10px</span>;    <span class="hljs-comment">/* Espacio de 10px entre filas y columnas */</span>
+      }
+      </code></pre>
+      <h2 id="2-colocaci-n-de-elementos">2. Colocación de Elementos</h2>
+      <p>Puedes colocar elementos en la cuadrícula utilizando las propiedades grid-row y grid-column.</p>
+      <pre><code class="lang-css"><span class="hljs-selector-class">.item</span> {
+        <span class="hljs-attribute">grid-row</span>: <span class="hljs-number">1</span> / <span class="hljs-number">3</span>; <span class="hljs-comment">/* Ocupa desde la fila 1 hasta la fila 3 (inclusive) */</span>
+        <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">2</span>;  <span class="hljs-comment">/* Ocupa la columna 2 */</span>
+      }
+      </code></pre>
+      <h2 id="3-atajos-con-grid-area">3. Atajos con grid-area</h2>
+      <p>La propiedad grid-area es un atajo que combina grid-row, grid-column, grid-row-end, y grid-column-end.</p>
+      <pre><code class="lang-css"><span class="hljs-selector-class">.item</span> {
+        <span class="hljs-attribute">grid-area</span>: <span class="hljs-number">1</span> / <span class="hljs-number">2</span> / <span class="hljs-number">3</span> / <span class="hljs-number">4</span>; <span class="hljs-comment">/* Equivalente a grid-row, grid-column, grid-row-end, grid-column-end */</span>
+      }
+      </code></pre>
+      <h2 id="4-alineaci-n">4. Alineación</h2>
+      <p>Puedes alinear elementos dentro de las celdas utilizando propiedades como justify-items y align-items en el contenedor.</p>
+      <pre><code class="lang-css"><span class="hljs-selector-class">.container</span> {
+        <span class="hljs-attribute">justify-items</span>: center; <span class="hljs-comment">/* Alinea los elementos en el centro horizontalmente */</span>
+        <span class="hljs-attribute">align-items</span>: center; <span class="hljs-comment">/* Alinea los elementos en el centro verticalmente */</span>
+      }
+      </code></pre>
+      <h2 id="5-dise-o-responsivo">5. Diseño Responsivo</h2>
+      <p>CSS Grid Layout es altamente responsive. Utiliza la unidad fr para especificar tamaños relativos y las funciones minmax() y auto para un diseño flexible.</p>
+      <pre><code class="lang-css"><span class="hljs-selector-class">.container</span> {
+        <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-built_in">repeat</span>(auto-fill, minmax(100px, 1fr));
+        <span class="hljs-comment">/* Crea columnas de al menos 100px de ancho y crece para llenar el espacio disponible */</span>
+      }
+      </code></pre>
+      <h2 id="6-distribuci-n-autom-tica">6. Distribución Automática</h2>
+      <p>CSS Grid ofrece propiedades como auto-fill y auto-fit que permiten una distribución automática de elementos en la cuadrícula.</p>
+      <pre><code class="lang-css"><span class="hljs-selector-class">.container</span> {
+        <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-built_in">repeat</span>(auto-fill, minmax(100px, 1fr));
+        <span class="hljs-comment">/* Crea columnas de al menos 100px de ancho y crece para llenar el espacio disponible */</span>
+      }
+      </code></pre>
+      <h2 id="7-reas-de-la-cuadr-cula">7. Áreas de la Cuadrícula</h2>
+      <p>Puedes definir áreas en la cuadrícula y colocar elementos en esas áreas para simplificar la estructura del código.</p>
+      <pre><code class="lang-css"><span class="hljs-selector-class">.container</span> {
+        <span class="hljs-attribute">grid-template-areas</span>:
+          <span class="hljs-string">"header header"</span>
+          <span class="hljs-string">"sidebar main"</span>
+          <span class="hljs-string">"footer footer"</span>;
+      }
+      
+      <span class="hljs-selector-class">.item</span> {
+        <span class="hljs-attribute">grid-area</span>: header; <span class="hljs-comment">/* Coloca el elemento en el área "header" */</span>
+      }
+      </code></pre>
+      <h2 id="8-alineaci-n-avanzada">8. Alineación Avanzada</h2>
+      <p>Propiedades como justify-content y align-content permiten la alineación de las filas y columnas en el contenedor de la cuadrícula.</p>
+      <pre><code class="lang-css"><span class="hljs-selector-class">.container</span> {
+        <span class="hljs-attribute">justify-content</span>: space-around; <span class="hljs-comment">/* Distribuye uniformemente las filas en el contenedor */</span>
+        <span class="hljs-attribute">align-content</span>: center;         <span class="hljs-comment">/* Centra verticalmente las columnas en el contenedor */</span>
+      }
+      </code></pre>
+      <h2 id="9-ordenaci-n-de-elementos">9. Ordenación de Elementos</h2>
+      <p>La propiedad order permite cambiar el orden visual de los elementos sin modificar el orden en el código HTML.</p>
+      <pre><code class="lang-css"><span class="hljs-selector-class">.item</span> {
+        <span class="hljs-attribute">order</span>: <span class="hljs-number">1</span>; <span class="hljs-comment">/* Mueve el elemento al principio del orden visual */</span>
+      }
+      </code></pre>
+      <h2 id="10-fracciones-y-unidades-de-auto">10. Fracciones y Unidades de Auto</h2>
+      <p>Además de fr, las unidades como min-content, max-content y auto pueden ser útiles en ciertos contextos.</p>
+      <pre><code class="lang-css"><span class="hljs-selector-class">.container</span> {
+        <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-number">1</span>fr min-content auto;
+      }
+      </code></pre>
+      <p>Aquí dejo algunos ejemplos de los resultados que se podrían alcanzar usando este util comando.</p>
+      <p><img src="IMG/grid1.png" alt="Una forma de contener la información">
+      Una forma de contener la información.</p>
+      <p><img src="IMG/Grid2.jpg" alt="Alt text">
+      Una ayuda visual de como se generan los bloques.</p>
+      <p>Este <a href="https://youtu.be/dQw4w9WgXcQ">LINK</a> le llevará directo a la pagina web official de CSS para que consulte cualquier duda que tenga.</p>
+      <p>:-D</p>
+      
+    </article>
+  </main>
+  <!-- footer -->
+
+  <footer>
+    <p>Aqui termina internet.</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
