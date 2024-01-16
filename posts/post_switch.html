@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+
+<script>hljs.highlightAll();</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- navbar -->
+  <nav>
+    <div class="left">
+      <ul>
+        <li>
+          <a href="/index.html">Home</a>
+        </li>
+      </ul>
+    </div>
+    <div class="right">
+      <ul>
+        <li>
+          <a href="/blog.html">Blog</a>
+        </li>
+        <li>
+          <a href="/projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="/about.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- hero -->
+  <header>
+    <h1>Template</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+  </header>
+  <!-- blog con 5 ultimas entradas -->
+  <main>
+    <article>
+        
+        <h1 id="switch-en-javascript">Switch en JavaScript</h1>
+        <p>El switch es una estructura de control en JavaScript que permite realizar diferentes acciones basadas en el valor de una expresión. Es una alternativa a múltiples declaraciones <code>if-else</code> cuando se necesita evaluar una variable en varios casos.</p>
+        <h2 id="¿cómo-funciona">¿Cómo funciona?</h2>
+        <p>La estructura básica de un switch se ve así:</p>
+        <pre class=" language-javascript"><code class="prism  language-javascript">
+        <span class="token keyword">switch</span> <span class="token punctuation">(</span>expresión<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        
+        <span class="token keyword">case</span> valor1<span class="token punctuation">:</span>
+        
+        Declaraciones ejecutadas cuando el resultado de expresión coincide con el valor1
+        
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+        
+        <span class="token keyword">case</span> valor2<span class="token punctuation">:</span>
+        
+        Declaraciones ejecutadas cuando el resultado de expresión coincide con el valor2
+        
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+        
+        Más casos según sea necesario
+        
+        <span class="token keyword">default</span><span class="token punctuation">:</span>
+        
+        Código a ejecutar si ninguno de los casos coincide con la expresión
+        
+        <span class="token punctuation">}</span>
+        
+        </code></pre>
+        <p>-La expresión se evalúa una vez y se compara con los valores de los casos.</p>
+        <p>-Si se encuentra un caso que coincide con la expresión, se ejecuta el código asociado a ese caso.</p>
+        <p>-El break se utiliza para salir del bloque switch después de que se ha ejecutado un caso.</p>
+        <p>-Si no se encuentra ningún caso que coincida, se ejecuta el código dentro del bloque default (opcional).</p>
+        <p>-Tenemos que utilizar “===” para comprobar que el resultado coincide.</p>
+        <p>Aquí pongo un ejemplo:</p>
+        <pre class=" language-javascript"><code class="prism  language-javascript">
+        <span class="token keyword">switch</span> <span class="token punctuation">(</span>expr<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        
+        <span class="token keyword">case</span>  <span class="token string">"Naranjas"</span><span class="token punctuation">:</span>
+        
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"El kilogramo de naranjas cuesta $0.59."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+        
+        <span class="token keyword">case</span>  <span class="token string">"Manzanas"</span><span class="token punctuation">:</span>
+        
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"El kilogramo de manzanas cuesta $0.32."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+        
+        <span class="token keyword">case</span>  <span class="token string">"Mangos"</span><span class="token punctuation">:</span>
+        
+        <span class="token keyword">case</span>  <span class="token string">"Papayas"</span><span class="token punctuation">:</span>
+        
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"El kilogramo de mangos y papayas cuesta $2.79."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+        
+        <span class="token keyword">default</span><span class="token punctuation">:</span>
+        
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Lo lamentamos, por el momento no disponemos de "</span>  <span class="token operator">+</span> expr <span class="token operator">+</span>  <span class="token string">"."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        
+        <span class="token punctuation">}</span>
+        
+        </code></pre>
+        <p>En este caso evalúa el valor de la variable expr y devuelve el precio correspondiente para diferentes frutas que nosotros declaramos, si la fruta no está en la lista, mostrará un mensaje indicando que no disponen de esa fruta en el momento</p>
+        <p>Ademas también podemos realizar una operación única con múltiples casos:</p>
+        <pre class=" language-javascript"><code class="prism  language-javascript">
+        <span class="token keyword">var</span> Animal <span class="token operator">=</span>  <span class="token string">"Jirafa"</span><span class="token punctuation">;</span>
+        
+          
+        
+        <span class="token keyword">switch</span> <span class="token punctuation">(</span>Animal<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        
+        <span class="token keyword">case</span>  <span class="token string">"Vaca"</span><span class="token punctuation">:</span>
+        
+        <span class="token keyword">case</span>  <span class="token string">"Jirafa"</span><span class="token punctuation">:</span>
+        
+        <span class="token keyword">case</span>  <span class="token string">"Perro"</span><span class="token punctuation">:</span>
+        
+        <span class="token keyword">case</span>  <span class="token string">"Cerdo"</span><span class="token punctuation">:</span>
+        
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Este animal subirá al Arca de Noé."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+        
+        <span class="token keyword">case</span>  <span class="token string">"Dinosaurio"</span><span class="token punctuation">:</span>
+        
+        <span class="token keyword">default</span><span class="token punctuation">:</span>
+        
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Este animal no lo hará."</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        
+        <span class="token punctuation">}</span>
+        
+        </code></pre>
+        <p>De esta forma vemos cómo tomar decisiones basadas en el valor de una variable.</p>
+        <h2 id="¿cómo-podemos-empezar-a-usarlo">¿Cómo podemos empezar a usarlo?</h2>
+        <p>Para empezar tenemos que tener un HTML con la estructura básica en el cual vayamos a trabajar. Posteriormente nos iremos al script del JS, y empezaremos a escribir el código utilizando el switch ya que proporciona una estructura más limpia y eficiente cuando se necesitan múltiples casos para evaluar, sustituyendo así el if-else, destacando así la posibilidad de evitar repetir código. Además podemos utilizar de referencia el JS que he puesto de ejemplo anteriormente para tenerlo de base, pero se puede modificar como nosotros queramos!!.</p>
+    </article>
+  </main>
+  <!-- footer -->
+
+  <footer>
+    <p>Aqui termina internet.</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
+
+
