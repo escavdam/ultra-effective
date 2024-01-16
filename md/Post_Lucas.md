@@ -129,26 +129,4 @@ Una ayuda visual de como se generan los bloques.
 
 Este [LINK](https://youtu.be/dQw4w9WgXcQ) le llevará directo a la pagina web official de CSS para que consulte cualquier duda que tenga.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 :-D

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+
+<script>hljs.highlightAll();</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- navbar -->
+  <nav>
+    <div class="left">
+      <ul>
+        <li>
+          <a href="/index.html">Home</a>
+        </li>
+      </ul>
+    </div>
+    <div class="right">
+      <ul>
+        <li>
+          <a href="/blog.html">Blog</a>
+        </li>
+        <li>
+          <a href="/projects.html">Projects</a>
+        </li>
+        <li>
+          <a href="/about.html">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- hero -->
+  <header>
+    <h1>Template</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+  </header>
+  <!-- blog con 5 ultimas entradas -->
+  <main>
+    <article>
+        <h1 id="desentra-ando-event-preventdefault-en-javascript-un-guardi-n-de-acciones-predeterminadas">Desentrañando <code>event.preventDefault()</code> en JavaScript: Un Guardián de Acciones Predeterminadas</h1>
+<hr>
+<h2 id="introducci-n-">Introducción:</h2>
+<p>En el vasto mundo de JavaScript, la gestión de eventos es esencial para interactuar con usuarios y manipular el DOM. Un método clave en esta tarea es <code>event.preventDefault()</code>. Aparentemente simple, este método juega un papel crucial al interferir con el comportamiento predeterminado de eventos. Veamos en detalle qué hace y en qué casos resulta indispensable.</p>
+<hr>
+<h2 id="-qu-hace-event-preventdefault-">¿Qué hace <code>event.preventDefault()</code>?</h2>
+<p>Cuando un evento ocurre, ya sea un clic, un envío de formulario o una tecla presionada, el navegador ejecuta una acción predeterminada asociada a ese evento. <code>event.preventDefault()</code> es un método que detiene esta acción predeterminada, proporcionando así un control más preciso sobre el comportamiento del evento.</p>
+<hr>
+<h2 id="situaciones-comunes-de-uso-">Situaciones comunes de uso:</h2>
+<h3 id="1-formularios-y-env-os-">1. Formularios y envíos:</h3>
+<ul>
+<li><p>Al capturar el evento de envío (<code>submit</code>) de un formulario, <code>event.preventDefault()</code> evita que la página se recargue automáticamente. Esto es útil al realizar validaciones personalizadas antes de enviar datos al servidor.</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'miFormulario'</span>).addEventListener(<span class="hljs-string">'submit'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) </span>{
+  <span class="hljs-comment">// Realizar validaciones personalizadas</span>
+  <span class="hljs-keyword">if</span> (!validacionPersonalizada()) {
+      event.preventDefault(); <span class="hljs-comment">// Detener el envío predeterminado si la validación falla</span>
+  }
+});
+</code></pre>
+</li>
+</ul>
+<h3 id="2-enlaces-a-">2. Enlaces (<code>&lt;a&gt;</code>):</h3>
+<p>Al manejar el evento de clic en un enlace, <code>event.preventDefault()</code> evita que el navegador navegue a la URL especificada en el atributo <code>href</code>. Esto es útil para implementar navegación AJAX o realizar acciones específicas sin cambiar la página.</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'miEnlace'</span>).addEventListener(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) </span>{
+    event.preventDefault(); <span class="hljs-comment">// Detener la navegación predeterminada</span>
+    <span class="hljs-comment">// Realizar acciones personalizadas</span>
+});
+</code></pre>
+<h3 id="3-teclas-keydown-keyup-keypress-">3. Teclas (<code>keydown</code>, <code>keyup</code>, <code>keypress</code>):</h3>
+<p>Al interceptar eventos de teclas, <code>event.preventDefault()</code> puede evitar que ciertas combinaciones de teclas realicen acciones predeterminadas. Esto es común al desarrollar atajos de teclado personalizados.</p>
+<pre><code class="lang-javascript">document.addEventListener(<span class="hljs-string">'keydown'</span>, function(<span class="hljs-keyword">event</span>) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">event</span>.key === <span class="hljs-string">'Enter'</span> &amp;&amp; <span class="hljs-keyword">event</span>.ctrlKey) {
+        <span class="hljs-keyword">event</span>.preventDefault(); <span class="hljs-comment">// Evitar la acción predeterminada al presionar Ctrl + Enter</span>
+        <span class="hljs-comment">// Realizar acciones personalizadas</span>
+    }
+});
+</code></pre>
+
+    </article>
+  </main>
+  <!-- footer -->
+
+  <footer>
+    <p>Aqui termina internet.</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
