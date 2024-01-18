@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    font-size: 12px;
+    font-family: 'Lucida Sans';
+}
+
+nav li{
+    list-style: none;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background: pink;
+    width: 100%;
+    /* make column when touching */
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    
+}
+
+
+a{
+    text-decoration: none;
+    color: palevioletred;
+    font-size: 2rem;
+}
+
+a:hover{
+    color: hotpink;
+}
+
+.left{
+    display: flex;
+    gap: 1rem;
+    margin: 0 1rem;
+}
+
+.right ul{
+    display: flex;
+    gap: 1rem;
+    margin: 0 1rem;
+    flex-wrap: wrap;
+}
+
+body{
+    background: purple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: plum;
+
+}
+article {
+    h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 0.5rem;
+    }
+    
+}
+article h1{
+    font-size: 3rem;
+}
+article h2{
+    font-size: 2.5rem;
+}
+article h3{
+    font-size: 2rem;
+}
+article h4{
+    font-size: 1.8rem;
+}
+article h5{
+    font-size: 1.6rem;
+}
+article h6{
+    font-size: 1.4rem;
+}
+
+header{
+    text-align: center;
+    margin: 2rem 0;
+    width: 90%;
+    background: violet;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+}
+article img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 0;
+    margin: 0 auto;
+}
+
+article p{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+/* select next p of img inside article */
+article img + i{
+    text-align: center;
+    font-style: inherit;
+    margin-bottom: 1rem;
+}
+article{
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+article ul, article ol{
+    list-style-position: inside;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+footer{
+    background: black;
+    color: peachpuff;
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+hr{
+    width: 100%;
+    margin: 2rem 0;
+}
+
+@media screen and (min-width: 768px){
+
+    header{
+        width: 80%;
+    }
+    article img{
+        width: 50%;
+        height: 50%;
+    }
+
+    main{
+        width: 80%;
+    }
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#contact-links li{
+    list-style: none;
+    text-align: center;
+    border: 1px solid salmon;
+}
+
+@media screen and (min-width: 890px){
+
+    header{
+        width: 60%;
+    }
+    article img{
+        width: 50%;
+        height: 50%;
+    }
+
+    main{
+        width: 80%;
+    }
+}
