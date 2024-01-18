@@ -1,15 +1,13 @@
-#CHECKBOX
-El elemento HTML ```input type="checkbox"``` es un elemento de entrada que te permite insertar un vector o array de valores. El atributo **value** es usado para definr el valor enviado por el **checkbox**. El atributo **checked** se usa para indicar que el elemento está seleccionado. El atributo indeterminate se usa para indicar que el **checkbox** esta en un estado indeterminado (en la mayoria de las plataformas, esto dibuja una linea horizontal que atraviesa el **checkbox**).
+# CHECKBOX
+
+El elemento HTML `input type="checkbox"` es un elemento de entrada que te permite insertar un vector o array de valores. El atributo **value** es usado para definr el valor enviado por el **checkbox**. El atributo **checked** se usa para indicar que el elemento está seleccionado. El atributo indeterminate se usa para indicar que el **checkbox** esta en un estado indeterminado (en la mayoria de las plataformas, esto dibuja una linea horizontal que atraviesa el **checkbox**).
 
 ## Atributos
-```checked```
-Cuando el valor del atributo **type** es ```checkbox```, la presencia de este atributo booleano indica que el control se selecciona de forma predeterminada; de lo contrario, se ignora.
+`checked` cuando el valor del atributo **type** es `checkbox`, la presencia de este atributo booleano indica que el control se selecciona de forma predeterminada; de lo contrario, se ignora.
 
-```value```
-El valor inicial de control. Si se omite la propiedad **value**, el **resultado devuelto** al leer esta propiedad será la cadena **on**.
+`value` el valor inicial de control. Si se omite la propiedad **value**, el **resultado devuelto** al leer esta propiedad será la cadena **on**.
 
-```indeterminate```
-Indica que la casilla de verificación está en un estado indeterminado (en la mayoría de las plataformas, dibuja una línea horizontal a través del checkbox).
+`indeterminate` indica que la casilla de verificación está en un estado indeterminado (en la mayoría de las plataformas, dibuja una línea horizontal a través del checkbox).
 
 ## Ejemplos básicos
 
