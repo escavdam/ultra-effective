@@ -35,6 +35,7 @@ a{
 a:hover{
     color: hotpink;
 }
+
 .left{
     display: flex;
     gap: 1rem;
