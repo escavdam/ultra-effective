@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="estilado-de-enlaces">Estilado de enlaces</h1>
+    <h2 id="1-selector-de-enlaces-">1. Selector de Enlaces:</h2>
+    <p>En CSS, puedes seleccionar los enlaces utilizando el selector a. Aquí hay un ejemplo básico:</p>
+    <pre><code class="lang-css"><span class="hljs-selector-tag">a</span> {
+    <span class="hljs-comment">/* Estilos para todos los enlaces */</span>
+    <span class="hljs-attribute">text-decoration</span>: none; <span class="hljs-comment">/* Elimina el subrayado predeterminado */</span>
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#3366cc</span>; <span class="hljs-comment">/* Cambia el color del texto del enlace */</span>
+    }
+    </code></pre>
+    <h2 id="2-pseudo-clases-">2. Pseudo-clases:</h2>
+    <p>Puedes utilizar pseudo-clases para aplicar estilos específicos a ciertos estados del enlace, como :hover (cuando el mouse está sobre el enlace) y :visited (cuando el enlace ha sido visitado). Por ejemplo:</p>
+    <pre><code class="lang-css"><span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
+    <span class="hljs-attribute">text-decoration</span>: underline; <span class="hljs-comment">/* Subraya el enlace al pasar el mouse sobre él */</span>
+    }
+
+    <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:visited</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#800080</span>; <span class="hljs-comment">/* Cambia el color del texto para enlaces visitados */</span>
+    }
+    </code></pre>
+    <h2 id="3-estilos-de-botones-">3. Estilos de Botones:</h2>
+    <p>Puedes hacer que los enlaces se vean más como botones utilizando propiedades como padding, border, y background-color:</p>
+    <pre><code class="lang-css"><span class="hljs-selector-tag">a</span> {
+    <span class="hljs-attribute">display</span>: inline-block;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">20px</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">text-decoration</span>: none;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#4caf50</span>; <span class="hljs-comment">/* Color de fondo del botón */</span>
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#4caf50</span>; <span class="hljs-comment">/* Borde del botón */</span>
+    }
+
+    <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#45a049</span>; <span class="hljs-comment">/* Cambia el color de fondo al pasar el mouse sobre el botón */</span>
+    }
+    </code></pre>
+    <h2 id="4-estilos-de-texto-">4. Estilos de Texto:</h2>
+    <p>Puedes ajustar la apariencia del texto dentro del enlace, como el tamaño de la fuente y el estilo:</p>
+    <pre><code class="lang-css"><span class="hljs-selector-tag">a</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+    <span class="hljs-attribute">font-weight</span>: bold;
+    }
+    </code></pre>
+    <h2 id="5-transiciones-y-animaciones-">5. Transiciones y Animaciones:</h2>
+    <p>Para hacer las transiciones más suaves o agregar animaciones a los enlaces, puedes utilizar las propiedades transition y @keyframes. Por ejemplo:</p>
+    <pre><code class="lang-css"><span class="hljs-selector-tag">a</span> {
+    <span class="hljs-attribute">transition</span>: color <span class="hljs-number">0.3s</span> ease-in-out; <span class="hljs-comment">/* Transición suave para el cambio de color */</span>
+    }
+
+    <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#ff0000</span>; <span class="hljs-comment">/* Nuevo color al pasar el mouse */</span>
+    }
+    </code></pre>
+    <p>Estos son solo ejemplos básicos, y se puede personalizar los estilos según las preferencias de cada uno y el diseño general de la página web.</p>
+</body>
+</html>
