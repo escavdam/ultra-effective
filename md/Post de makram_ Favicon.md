@@ -10,5 +10,5 @@ Este favicon es útil. Porque ayuda el utilizador a reconocer el sitio sin leer 
 
     <link rel="icon"  type="image/x-icon"  href="/images/favicon.ico">
 
-Este código simple necesita ser implementado al `<head>` y tener el imagen referenciada a través `href` (tanto simple escribir su nombre si el imagen ico es en la misma carpeta del archivo HTML. O tener su propia carpeta y escribir el link del root al imagen) . El favicon vas a aparecer automáticamente a la pestaña
+Este código simple necesita ser implementado al `<head>` y tener el imagen referenciada a través `href` (tanto simple escribir su nombre si el imagen ico es en la misma carpeta del archivo HTML. O tener su propia carpeta y escribir el link del root al imagen) . El favicon vas a aparecer automáticamente a la pestaña.
 
