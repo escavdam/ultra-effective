@@ -14,6 +14,8 @@ Un código básico de un servidor usando Express.
 
 ### [CSS - Enlaces](/posts/post_estilado_de_enlaces_Javi.md)
 
+Conceptos básicos a la hora de estilar enlaces en una página web.
+
 ### [CSS - Grid](/posts/Post_Lucas.md)
 
 ### [Javascript - event.preventDefault](/posts/post_Lucas_event.preventDefault().md)
@@ -23,5 +25,7 @@ Un código básico de un servidor usando Express.
 ### [Javascript - DOM](/posts/DOM_element_js.md)
 
 ### [Javascript - Funciones](/posts/Explicacion.md)
+
+Una explicación breve y escueta sobre las funciones de JavaScript.
 
 ### [Javascript - localStorage](/posts/post_camacho.md)
