@@ -18,6 +18,8 @@ Un código básico de un servidor usando Express.
 
 ### [Javascript - event.preventDefault](/posts/post_Lucas_event.preventDefault().md)
 
+    Explicación básica sobre el event.preventDefault con ejemplos y descripciones de las funciones que puedes hacer y demás cosas que puedes hacer con el.
+
 ### [Javascript - switch](/posts/post_switch.md)
 
 ### [Javascript - DOM](/posts/DOM_element_js.md)
