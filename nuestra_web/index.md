@@ -25,3 +25,7 @@ Un código básico de un servidor usando Express.
 ### [Javascript - Funciones](/posts/Explicacion.md)
 
 ### [Javascript - localStorage](/posts/post_camacho.md)
+
+### [Javascript - Document.](/posts/Explicacion-De-Ale.md)
+
+Aqui se explica las diferentes funciones que tiene "Document."
