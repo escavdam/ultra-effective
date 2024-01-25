@@ -1,0 +1,17 @@
+{
+  "name": "ultra-effective",
+  "version": "1.0.0",
+  "description": "vamos a colaborar entre todos!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vitepress dev nuestra_web",
+    "build": "vitepress build nuestra_web"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vitepress": "^1.0.0-rc.40"
+  }
+}
