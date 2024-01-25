@@ -28,4 +28,4 @@ Un código básico de un servidor usando Express.
 
 ### [Javascript - Document.](/posts/Explicacion-De-Ale.md)
 
-Aqui se explica las diferentes funciones que tiene "Document."
+Aqui se explica las diferentes funciones que tiene "document."
