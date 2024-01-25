@@ -120,11 +120,8 @@ Además de fr, las unidades como min-content, max-content y auto pueden ser úti
 
 Aquí dejo algunos ejemplos de los resultados que se podrían alcanzar usando este util comando.
 
-![Una forma de contener la información](IMG/grid1.png)
 Una forma de contener la información.
 
-
-![Alt text](IMG/Grid2.jpg)
 Una ayuda visual de como se generan los bloques.
 
 Este [LINK](https://youtu.be/dQw4w9WgXcQ) le llevará directo a la pagina web official de CSS para que consulte cualquier duda que tenga.

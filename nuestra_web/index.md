@@ -22,7 +22,7 @@ Conceptos básicos a la hora de estilar enlaces en una página web.
 
 ### [Javascript - event.preventDefault](/posts/post_Lucas_event.preventDefault().md)
 
-    Explicación básica sobre el event.preventDefault con ejemplos y descripciones de las funciones que puedes hacer y demás cosas que puedes hacer con el.
+Explicación básica sobre el event.preventDefault con ejemplos y descripciones de las funciones que puedes hacer y demás cosas que puedes hacer con el.
 
 ### [Javascript - switch](/posts/post_switch.md)
 
