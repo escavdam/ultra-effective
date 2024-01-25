@@ -22,6 +22,8 @@ Conceptos básicos a la hora de estilar enlaces en una página web.
 
 ### [Javascript - switch](/posts/post_switch.md)
 
+Un post que habla sobre la utilizacion del switch, ejemplos y como empezar a usarlo.
+
 ### [Javascript - DOM](/posts/DOM_element_js.md)
 
 ### [Javascript - Funciones](/posts/Explicacion.md)
@@ -29,3 +31,5 @@ Conceptos básicos a la hora de estilar enlaces en una página web.
 Una explicación breve y escueta sobre las funciones de JavaScript.
 
 ### [Javascript - localStorage](/posts/post_camacho.md)
+
+Un post que habla sobre el Local Storage y su utilizacion basica para su aplicacion.
