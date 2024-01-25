@@ -10,6 +10,8 @@ Un código básico de un servidor usando Express.
 
 ### [HTML - Checkbox](/posts/checkbox.md)
 
+Una descripción de CheckBox, y ejemplos básicos by Álvaro
+
 ### [HTML - Radio](/posts/post_Cristian.md)
 
 ### [CSS - Enlaces](/posts/post_estilado_de_enlaces_Javi.md)
@@ -25,6 +27,8 @@ Conceptos básicos a la hora de estilar enlaces en una página web.
 Un post que habla sobre la utilizacion del switch, ejemplos y como empezar a usarlo.
 
 ### [Javascript - DOM](/posts/DOM_element_js.md)
+
+Una descripción simple del DOM de JS, junto a unos ejemplos básicos by Álvaro
 
 ### [Javascript - Funciones](/posts/Explicacion.md)
 
