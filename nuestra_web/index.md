@@ -39,3 +39,7 @@ Una explicación breve y escueta sobre las funciones de JavaScript.
 ### [Javascript - localStorage](/posts/post_camacho.md)
 
 Un post que habla sobre el Local Storage y su utilizacion basica para su aplicacion.
+
+### [Javascript - Document.](/posts/Explicacion-De-Ale.md)
+
+Aqui se explica las diferentes funciones que tiene "document."
