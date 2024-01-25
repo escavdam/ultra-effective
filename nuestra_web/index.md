@@ -20,8 +20,12 @@ Un código básico de un servidor usando Express.
 
 ### [Javascript - switch](/posts/post_switch.md)
 
+Un post que habla sobre la utilizacion del switch, ejemplos y como empezar a usarlo.
+
 ### [Javascript - DOM](/posts/DOM_element_js.md)
 
 ### [Javascript - Funciones](/posts/Explicacion.md)
 
 ### [Javascript - localStorage](/posts/post_camacho.md)
+
+Un post que habla sobre el Local Storage y su utilizacion basica para su aplicacion.
