@@ -43,3 +43,7 @@ Un post que habla sobre el Local Storage y su utilizacion basica para su aplicac
 ### [Javascript - Document.](/posts/Explicacion-De-Ale.md)
 
 Aqui se explica las diferentes funciones que tiene "document."
+
+### [Github - Actions y deploys automáticos](/posts/github_actions.md)
+
+Como usar Github Actions para automatizar el deploy de nuestra web a neocities o cualquier otro hosting.
