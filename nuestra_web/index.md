@@ -20,6 +20,8 @@ Conceptos básicos a la hora de estilar enlaces en una página web.
 
 ### [CSS - Grid](/posts/Post_Lucas.md)
 
+Post tutorial de el elemente grid y todo lo que podemos conseguir con el para mejorar nuestras paginas.
+
 ### [Javascript - event.preventDefault](/posts/post_Lucas_event.preventDefault().md)
 
 Explicación básica sobre el event.preventDefault con ejemplos y descripciones de las funciones que puedes hacer y demás cosas que puedes hacer con el.
