@@ -2,6 +2,10 @@
 
 Empezamos la global! Podemos utilizar este sitio para ayudarnos a compartir información y recursos entre nosotros 💻
 
-## [Hazme reir bufón](./hazme_reir_bufon.md)
+## [Little Jester]('www.linkanuestrojueguico.dev')
 
-Idea para la temática 'Hazme reir' de la Global Game Jam 2024.
+El juego que montamos para la Global Game Jam 2024.
+
+## [Assets](./recursos.md)
+
+Assets y utilidades creadas durante la Jam.
