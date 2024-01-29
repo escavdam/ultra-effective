@@ -2,7 +2,7 @@
 
 Empezamos la global! Podemos utilizar este sitio para ayudarnos a compartir información y recursos entre nosotros 💻
 
-## [Little Jester]('www.linkanuestrojueguico.dev')
+## [Little Jester](https://itch.io/)
 
 El juego que montamos para la Global Game Jam 2024.
 
