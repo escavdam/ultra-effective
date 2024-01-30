@@ -46,6 +46,10 @@ Un post que habla sobre el Local Storage y su utilizacion basica para su aplicac
 
 Aqui se explica las diferentes funciones que tiene "document."
 
-### [Github - Actions y deploys automáticos](/posts/github_actions.md)
+### [Otros - Techstack](/posts/techstack.md)
 
-Como usar Github Actions para automatizar el deploy de nuestra web a neocities o cualquier otro hosting.
+Recapitulación de las tecnologías que hemos visto hasta ahora.
+
+### [Otros - Bard](/posts/bard.md)
+
+Uso de Bard, un modelo de lenguaje desarrollado por Google en Nodejs.

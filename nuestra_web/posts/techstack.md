@@ -1,3 +1,8 @@
+---
+titulo: Techstack
+---
+# {{ $frontmatter.titulo }}
+
 # Techstack
 
 Ya sabeis muchas tecnologias web, es hora de recapitular un poco, las mas importantes que hemos visto serían:
