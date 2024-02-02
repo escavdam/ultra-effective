@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as i,V as e}from"./chunks/framework.fZt_wkQb.js";const u=JSON.parse('{"title":"Bard","description":"","frontmatter":{},"headers":[],"relativePath":"posts/bard.md","filePath":"posts/bard.md"}'),t={name:"posts/bard.md"},n=e("",32),l=[n];function p(h,r,o,d,k,c){return i(),a("div",null,l)}const E=s(t,[["render",p]]);export{u as __pageData,E as default};

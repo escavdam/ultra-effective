@@ -1,0 +1,1 @@
+import{_ as a,c as e,o as s,V as t}from"./chunks/framework.fZt_wkQb.js";const f=JSON.parse('{"title":"Ultra-Effective","description":"","frontmatter":{},"headers":[],"relativePath":"index.md","filePath":"index.md"}'),o={name:"index.md"},r=t("",28),c=[r];function i(l,n,p,h,d,u){return s(),e("div",null,c)}const b=a(o,[["render",i]]);export{f as __pageData,b as default};
