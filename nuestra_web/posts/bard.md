@@ -25,10 +25,9 @@ Para conseguir la cookie, abre tu navegador en la pagina de bard, abre la consol
 import Bard from "bard-ai";
 const COOKIE = "Ingresa aqui tu cookie de bard";
 let myBard = new Bard(COOKIE);
-const pregunta = process.argv[2];
+const pregunta = "enseñame los comandos basicos SQL para interactuar con bases de datos";
 console.log(await myBard.ask(pregunta));
 ```
-
 Asegúrate de configurar tu package.json para que se ejecute como un módulo, añadiendo lo siguiente:
 
 ```json
@@ -37,6 +36,58 @@ Asegúrate de configurar tu package.json para que se ejecute como un módulo, a�
 }
 ```
 
+Si quieres poder pasarle la pregunta como argumento al script, puedes hacerlo de la siguiente manera:
+
+```js
+import Bard from "bard-ai";
+const COOKIE = "Ingresa aqui tu cookie de bard";
+let myBard = new Bard(COOKIE);
+const pregunta = process.argv[2];
+console.log(await myBard.ask(pregunta));
+```
+
+
+
 Esto es necesario para que podamos usar `import` en vez de `require`.
 
 Ahora puedes ejecutarlo con `node index.js "¿Cómo estás?"` y te devolverá una respuesta.
+
+## Alias
+
+Configurar el script como un alias en nuestro sistema para poder ejecutarlo desde cualquier lugar puede ser util.
+
+En linux, podemos hacerlo de la siguiente manera:
+
+```bash
+code ~/.bashrc
+```
+
+Y añadimos la siguiente línea al final del archivo:
+
+```bash
+alias bard="node /ruta/a/tu/script/index.js"
+```
+
+Guardamos el archivo y ejecutamos el siguiente comando para que se apliquen los cambios:
+
+```bash
+source ~/.bashrc
+```
+
+Listo!
+
+En Windows, podemos hacerlo de la siguiente manera:
+
+```bash
+doskey bard=node C:\ruta\a\tu\script\index.js $*
+```
+
+El `$*` es para que podamos pasarle argumentos al script.
+
+Si en algun momento quieres eliminar el alias, puedes hacerlo con el siguiente comando:
+
+```bash
+doskey bard=
+```
+
+Listo! Ahora puedes usar bard desde cualquier lugar de tu sistema directamente en la terminal.
